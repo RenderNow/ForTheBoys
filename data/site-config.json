@@ -1,0 +1,240 @@
+{
+  "theme": {
+    "bg": "#0f1015",
+    "bgDeep": "#090a0e",
+    "panel": "#181b23",
+    "panelSoft": "#202431",
+    "line": "#2b303d",
+    "text": "#f5f2e8",
+    "muted": "#aaa9a4",
+    "accent": "#ffb313",
+    "accentDark": "#c77f00",
+    "cream": "#ebeae3"
+  },
+  "visibility": {
+    "phonePreview": true,
+    "strip": true,
+    "journeys": true,
+    "schools": true,
+    "safety": true,
+    "proof": true,
+    "pilot": true
+  },
+  "content": {
+    "siteTitle": "For The Boys: Mentor",
+    "metaDescription": "For The Boys Mentor is a Stoic AI mentor concept for young men, focused on discipline, resilience and better decisions.",
+    "brandName": "For The Boys",
+    "brandMark": "FTB",
+    "nav": [
+      {
+        "label": "Mentor Flow",
+        "href": "#journeys"
+      },
+      {
+        "label": "Schools",
+        "href": "#schools"
+      },
+      {
+        "label": "Safety",
+        "href": "#safety"
+      }
+    ],
+    "navCta": {
+      "label": "Start Pilot",
+      "href": "#pilot"
+    },
+    "hero": {
+      "eyebrow": "Stoic AI mentor for young men",
+      "headline": "Build the man before the world tests him.",
+      "lede": "Calm, structured support for boys and young men to pause, reflect and make better choices under pressure.",
+      "primaryCta": {
+        "label": "Launch the pilot",
+        "href": "#pilot"
+      },
+      "secondaryCta": {
+        "label": "See the flow",
+        "href": "#journeys"
+      }
+    },
+    "phone": {
+      "logo": "For The Boys",
+      "kicker": "AI Mentor",
+      "heading": "What do you need today?",
+      "checkInTitle": "Today's check-in",
+      "checkInText": "Start with a 60-second reset before the day tests you.",
+      "checkInButton": "Start",
+      "tools": [
+        {
+          "flow": "anger",
+          "title": "Anger Reset",
+          "text": "Pause before you react"
+        },
+        {
+          "flow": "overwhelm",
+          "title": "Feeling Low",
+          "text": "Ground yourself"
+        },
+        {
+          "flow": "decision",
+          "title": "Decision Help",
+          "text": "Think it through"
+        },
+        {
+          "flow": "discipline",
+          "title": "Discipline",
+          "text": "Get back on track"
+        }
+      ]
+    },
+    "strip": [
+      "Pause",
+      "Reflect",
+      "Act with strength"
+    ],
+    "journeys": {
+      "eyebrow": "Mentor flow",
+      "heading": "Simple journeys, not an open-ended therapy bot.",
+      "text": "The first version focuses on safe, guided paths for real moments: anger, overwhelm, rejection, discipline, decisions, daily reflection and journaling.",
+      "defaultFlow": "anger",
+      "items": [
+        {
+          "flow": "anger",
+          "number": "01",
+          "title": "Anger Reset",
+          "text": "Slow down before the reaction becomes the regret."
+        },
+        {
+          "flow": "overwhelm",
+          "number": "02",
+          "title": "Anxiety & Overwhelm",
+          "text": "Separate what is in your control from what is not."
+        },
+        {
+          "flow": "rejection",
+          "number": "03",
+          "title": "Rejection Reflection",
+          "text": "Handle embarrassment, pressure and comparison."
+        },
+        {
+          "flow": "discipline",
+          "number": "04",
+          "title": "Discipline Builder",
+          "text": "Turn motivation into one clear next action."
+        }
+      ],
+      "flows": {
+        "anger": {
+          "label": "Anger reset",
+          "heading": "Pause before you react.",
+          "mentorOne": "You cannot control what was said. You can control what you do next.",
+          "user": "I want to message him back now.",
+          "mentorTwo": "Then we slow down first. What outcome do you actually want in one hour?",
+          "steps": [
+            "Breathe for 30 seconds",
+            "Write it but do not send",
+            "Speak to someone trusted"
+          ]
+        },
+        "overwhelm": {
+          "label": "Overwhelm reset",
+          "heading": "Control the next step.",
+          "mentorOne": "Name the pressure. Then separate what is yours from what is not yours.",
+          "user": "Everything feels too much today.",
+          "mentorTwo": "You do not need to fix the whole day. Choose one useful action for the next ten minutes.",
+          "steps": [
+            "Put the phone down",
+            "Write the one task",
+            "Ask for help if needed"
+          ]
+        },
+        "rejection": {
+          "label": "Rejection reflection",
+          "heading": "Do not let shame lead.",
+          "mentorOne": "Embarrassment is uncomfortable. It is not an instruction.",
+          "user": "I feel stupid about what happened.",
+          "mentorTwo": "The stronger move is to learn from it without attacking yourself.",
+          "steps": [
+            "Describe the facts",
+            "Drop the insults",
+            "Choose one repair action"
+          ]
+        },
+        "discipline": {
+          "label": "Discipline builder",
+          "heading": "Return to the work.",
+          "mentorOne": "Discipline is not a feeling. It is the next honest action.",
+          "user": "I keep putting it off.",
+          "mentorTwo": "Start smaller. Ten focused minutes is better than another promise.",
+          "steps": [
+            "Clear the desk",
+            "Set a ten-minute timer",
+            "Finish one visible piece"
+          ]
+        },
+        "decision": {
+          "label": "Decision mentor",
+          "heading": "Think past the impulse.",
+          "mentorOne": "Before you choose, look at the consequence you are accepting.",
+          "user": "I need to decide what to do.",
+          "mentorTwo": "A strong decision respects your future self, not only your current mood.",
+          "steps": [
+            "List the options",
+            "Name the consequence",
+            "Choose the respectful action"
+          ]
+        }
+      }
+    },
+    "schools": {
+      "eyebrow": "For schools and youth teams",
+      "heading": "Built around emotional fitness, character and practical action.",
+      "features": [
+        {
+          "number": "01",
+          "title": "Daily check-ins",
+          "text": "Short reflections that help users name what happened, what they can control and what comes next."
+        },
+        {
+          "number": "02",
+          "title": "Guided journal",
+          "text": "Private prompts around courage, discipline, patience, humility, confidence and self-control."
+        },
+        {
+          "number": "03",
+          "title": "Decision mentor",
+          "text": "Structured support before sending a message, arguing, quitting, fighting or taking a risky choice."
+        }
+      ]
+    },
+    "safety": {
+      "eyebrow": "Safeguarding first",
+      "heading": "Not therapy. Not diagnosis. Not a replacement for trusted adults.",
+      "text": "The mentor should support everyday reflection and emotional regulation while clearly routing serious issues to urgent human help.",
+      "items": [
+        "No mental health diagnosis",
+        "No secrecy from trusted adults",
+        "No harmful or violent advice",
+        "Crisis and safeguarding routing"
+      ]
+    },
+    "proof": {
+      "eyebrow": "Brand direction",
+      "heading": "Black, charcoal, bold white type and the FTB yellow accent.",
+      "text": "The page uses the visual language from the supplied brand example and keeps the first version intentionally focused for a clickable pilot.",
+      "imageAlt": "For The Boys Mentor brand example shots"
+    },
+    "pilot": {
+      "eyebrow": "Pilot model",
+      "heading": "Start with schools, youth organisations, sports clubs and workshop partners.",
+      "text": "Validate with young men aged 13 to 18, test the five core journeys and collect feedback before building the full mentor app.",
+      "cta": {
+        "label": "Register interest",
+        "href": "mailto:hello@fortheboys.example"
+      }
+    },
+    "footer": {
+      "brand": "For The Boys: Mentor",
+      "tagline": "Ancient wisdom for modern young men."
+    }
+  }
+}

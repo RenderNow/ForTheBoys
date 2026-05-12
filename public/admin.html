@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For The Boys Admin</title>
+    <link rel="stylesheet" href="/admin.css" />
+  </head>
+  <body>
+    <header class="admin-header">
+      <div>
+        <span class="brand-mark">FTB</span>
+        <strong>Site Admin</strong>
+      </div>
+      <nav>
+        <a href="/">View Site</a>
+        <button type="button" id="logout-button" hidden>Log Out</button>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <section class="login-panel" id="login-panel">
+        <div>
+          <p class="eyebrow">Protected editor</p>
+          <h1>Manage site copy, colours and toggles.</h1>
+          <p>
+            Local default password is <strong>fortheboys</strong>. Before this goes live on Render, set an
+            <strong>ADMIN_PASSWORD</strong> environment variable.
+          </p>
+        </div>
+        <form id="login-form" class="login-form">
+          <label>
+            Admin password
+            <input type="password" id="password" autocomplete="current-password" required />
+          </label>
+          <button type="submit">Log In</button>
+          <p class="status" id="login-status" role="status"></p>
+        </form>
+      </section>
+
+      <section class="editor" id="editor" hidden>
+        <div class="editor-top">
+          <div>
+            <p class="eyebrow">Live content config</p>
+            <h1>Edit the website.</h1>
+            <p>Quick fields cover common changes. The advanced JSON box can edit every visible item.</p>
+          </div>
+          <div class="actions">
+            <button type="button" id="reload-button">Reload</button>
+            <button type="button" id="save-button">Save Changes</button>
+          </div>
+        </div>
+
+        <p class="status" id="editor-status" role="status"></p>
+
+        <div class="admin-grid">
+          <section class="panel">
+            <h2>Brand & Hero</h2>
+            <div class="field-grid">
+              <label>
+                Browser title
+                <input type="text" data-path="content.siteTitle" />
+              </label>
+              <label>
+                Brand name
+                <input type="text" data-path="content.brandName" />
+              </label>
+              <label>
+                Brand mark
+                <input type="text" data-path="content.brandMark" maxlength="8" />
+              </label>
+              <label>
+                Header button text
+                <input type="text" data-path="content.navCta.label" />
+              </label>
+              <label>
+                Header button link
+                <input type="text" data-path="content.navCta.href" />
+              </label>
+              <label>
+                Hero eyebrow
+                <input type="text" data-path="content.hero.eyebrow" />
+              </label>
+              <label class="full">
+                Hero headline
+                <textarea rows="3" data-path="content.hero.headline"></textarea>
+              </label>
+              <label class="full">
+                Hero intro
+                <textarea rows="3" data-path="content.hero.lede"></textarea>
+              </label>
+              <label>
+                Primary button text
+                <input type="text" data-path="content.hero.primaryCta.label" />
+              </label>
+              <label>
+                Primary button link
+                <input type="text" data-path="content.hero.primaryCta.href" />
+              </label>
+              <label>
+                Secondary button text
+                <input type="text" data-path="content.hero.secondaryCta.label" />
+              </label>
+              <label>
+                Secondary button link
+                <input type="text" data-path="content.hero.secondaryCta.href" />
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>Colours</h2>
+            <div class="colour-grid">
+              <label>Background <input type="color" data-path="theme.bg" /></label>
+              <label>Deep background <input type="color" data-path="theme.bgDeep" /></label>
+              <label>Panel <input type="color" data-path="theme.panel" /></label>
+              <label>Soft panel <input type="color" data-path="theme.panelSoft" /></label>
+              <label>Line <input type="color" data-path="theme.line" /></label>
+              <label>Main text <input type="color" data-path="theme.text" /></label>
+              <label>Muted text <input type="color" data-path="theme.muted" /></label>
+              <label>Accent <input type="color" data-path="theme.accent" /></label>
+              <label>Dark accent <input type="color" data-path="theme.accentDark" /></label>
+              <label>Cream <input type="color" data-path="theme.cream" /></label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>Section Toggles</h2>
+            <div class="toggle-grid">
+              <label><input type="checkbox" data-visibility="phonePreview" /> Phone preview</label>
+              <label><input type="checkbox" data-visibility="strip" /> Pause / Reflect strip</label>
+              <label><input type="checkbox" data-visibility="journeys" /> Mentor flow</label>
+              <label><input type="checkbox" data-visibility="schools" /> Schools section</label>
+              <label><input type="checkbox" data-visibility="safety" /> Safety section</label>
+              <label><input type="checkbox" data-visibility="proof" /> Brand proof image</label>
+              <label><input type="checkbox" data-visibility="pilot" /> Pilot CTA</label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>Sections</h2>
+            <div class="field-grid">
+              <label class="full">
+                Promise strip, one line per item
+                <textarea rows="4" data-lines="content.strip"></textarea>
+              </label>
+              <label class="full">
+                Mentor flow heading
+                <textarea rows="2" data-path="content.journeys.heading"></textarea>
+              </label>
+              <label class="full">
+                Mentor flow text
+                <textarea rows="3" data-path="content.journeys.text"></textarea>
+              </label>
+              <label class="full">
+                Schools heading
+                <textarea rows="2" data-path="content.schools.heading"></textarea>
+              </label>
+              <label class="full">
+                Safety heading
+                <textarea rows="2" data-path="content.safety.heading"></textarea>
+              </label>
+              <label class="full">
+                Safety text
+                <textarea rows="3" data-path="content.safety.text"></textarea>
+              </label>
+              <label class="full">
+                Safety points, one line per item
+                <textarea rows="5" data-lines="content.safety.items"></textarea>
+              </label>
+              <label class="full">
+                Pilot heading
+                <textarea rows="2" data-path="content.pilot.heading"></textarea>
+              </label>
+              <label class="full">
+                Pilot text
+                <textarea rows="3" data-path="content.pilot.text"></textarea>
+              </label>
+              <label>
+                Pilot button text
+                <input type="text" data-path="content.pilot.cta.label" />
+              </label>
+              <label>
+                Pilot button link
+                <input type="text" data-path="content.pilot.cta.href" />
+              </label>
+            </div>
+          </section>
+
+          <section class="panel wide">
+            <div class="panel-heading">
+              <div>
+                <h2>Advanced JSON</h2>
+                <p>Edit phone cards, mentor flow scripts, feature cards, nav links and every other value.</p>
+              </div>
+              <button type="button" id="load-json-button">Load JSON Into Fields</button>
+            </div>
+            <textarea id="config-json" class="json-editor" spellcheck="false"></textarea>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>

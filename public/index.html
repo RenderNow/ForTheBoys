@@ -13,42 +13,42 @@
   <body>
     <header class="site-header" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="For The Boys Mentor home">
-        <span class="brand-mark">FTB</span>
-        <span>For The Boys</span>
+        <span class="brand-mark" id="brand-mark">FTB</span>
+        <span id="brand-name">For The Boys</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
         <a href="#journeys">Mentor Flow</a>
         <a href="#schools">Schools</a>
         <a href="#safety">Safety</a>
       </nav>
-      <a class="nav-action" href="#pilot">Start Pilot</a>
+      <a class="nav-action" id="nav-cta" href="#pilot">Start Pilot</a>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Stoic AI mentor for young men</p>
-          <h1>Build the man before the world tests him.</h1>
-          <p class="hero-lede">
+          <p class="eyebrow" id="hero-eyebrow">Stoic AI mentor for young men</p>
+          <h1 id="hero-headline">Build the man before the world tests him.</h1>
+          <p class="hero-lede" id="hero-lede">
             Calm, structured support for boys and young men to pause, reflect and make better choices under pressure.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#pilot">Launch the pilot</a>
-            <a class="button button-secondary" href="#journeys">See the flow</a>
+            <a class="button button-primary" id="hero-primary-cta" href="#pilot">Launch the pilot</a>
+            <a class="button button-secondary" id="hero-secondary-cta" href="#journeys">See the flow</a>
           </div>
         </div>
 
-        <div class="phone-shell" aria-label="Mentor app preview">
+        <div class="phone-shell" data-config-section="phonePreview" aria-label="Mentor app preview">
           <div class="phone-screen">
-            <div class="phone-logo">For The Boys</div>
-            <p class="screen-kicker">AI Mentor</p>
-            <h2>What do you need today?</h2>
+            <div class="phone-logo" id="phone-logo">For The Boys</div>
+            <p class="screen-kicker" id="phone-kicker">AI Mentor</p>
+            <h2 id="phone-heading">What do you need today?</h2>
             <div class="check-in">
-              <strong>Today's check-in</strong>
-              <span>Start with a 60-second reset before the day tests you.</span>
-              <button type="button">Start</button>
+              <strong id="phone-check-title">Today's check-in</strong>
+              <span id="phone-check-text">Start with a 60-second reset before the day tests you.</span>
+              <button type="button" id="phone-check-button">Start</button>
             </div>
-            <div class="tool-grid">
+            <div class="tool-grid" id="tool-grid">
               <button type="button" data-flow="anger" class="tool-card active">
                 <strong>Anger Reset</strong>
                 <span>Pause before you react</span>
@@ -70,17 +70,17 @@
         </div>
       </section>
 
-      <section class="strip" aria-label="Core promise">
+      <section class="strip" data-config-section="strip" id="strip" aria-label="Core promise">
         <span>Pause</span>
         <span>Reflect</span>
         <span>Act with strength</span>
       </section>
 
-      <section class="section" id="journeys">
+      <section class="section" data-config-section="journeys" id="journeys">
         <div class="section-heading">
-          <p class="eyebrow">Mentor flow</p>
-          <h2>Simple journeys, not an open-ended therapy bot.</h2>
-          <p>
+          <p class="eyebrow" id="journeys-eyebrow">Mentor flow</p>
+          <h2 id="journeys-heading">Simple journeys, not an open-ended therapy bot.</h2>
+          <p id="journeys-text">
             The first version focuses on safe, guided paths for real moments: anger, overwhelm, rejection, discipline,
             decisions, daily reflection and journaling.
           </p>
@@ -108,7 +108,7 @@
             </div>
           </div>
 
-          <div class="journey-list" aria-label="Available mentor journeys">
+          <div class="journey-list" id="journey-list" aria-label="Available mentor journeys">
             <button type="button" class="journey active" data-flow="anger">
               <span>01</span>
               <strong>Anger Reset</strong>
@@ -133,12 +133,12 @@
         </div>
       </section>
 
-      <section class="section feature-band" id="schools">
+      <section class="section feature-band" data-config-section="schools" id="schools">
         <div>
-          <p class="eyebrow">For schools and youth teams</p>
-          <h2>Built around emotional fitness, character and practical action.</h2>
+          <p class="eyebrow" id="schools-eyebrow">For schools and youth teams</p>
+          <h2 id="schools-heading">Built around emotional fitness, character and practical action.</h2>
         </div>
-        <div class="feature-grid">
+        <div class="feature-grid" id="feature-grid">
           <article>
             <span>01</span>
             <h3>Daily check-ins</h3>
@@ -157,16 +157,16 @@
         </div>
       </section>
 
-      <section class="section safety" id="safety">
+      <section class="section safety" data-config-section="safety" id="safety">
         <div class="safety-copy">
-          <p class="eyebrow">Safeguarding first</p>
-          <h2>Not therapy. Not diagnosis. Not a replacement for trusted adults.</h2>
-          <p>
+          <p class="eyebrow" id="safety-eyebrow">Safeguarding first</p>
+          <h2 id="safety-heading">Not therapy. Not diagnosis. Not a replacement for trusted adults.</h2>
+          <p id="safety-text">
             The mentor should support everyday reflection and emotional regulation while clearly routing serious issues
             to urgent human help.
           </p>
         </div>
-        <ul class="safety-list">
+        <ul class="safety-list" id="safety-list">
           <li>No mental health diagnosis</li>
           <li>No secrecy from trusted adults</li>
           <li>No harmful or violent advice</li>
@@ -174,32 +174,32 @@
         </ul>
       </section>
 
-      <section class="section proof">
+      <section class="section proof" data-config-section="proof">
         <div class="proof-copy">
-          <p class="eyebrow">Brand direction</p>
-          <h2>Black, charcoal, bold white type and the FTB yellow accent.</h2>
-          <p>
+          <p class="eyebrow" id="proof-eyebrow">Brand direction</p>
+          <h2 id="proof-heading">Black, charcoal, bold white type and the FTB yellow accent.</h2>
+          <p id="proof-text">
             The page uses the visual language from the supplied brand example and keeps the first version intentionally
             focused for a clickable pilot.
           </p>
         </div>
-        <img src="/assets/brand-example.jpg" alt="For The Boys Mentor brand example shots" />
+        <img id="proof-image" src="/assets/brand-example.jpg" alt="For The Boys Mentor brand example shots" />
       </section>
 
-      <section class="section pilot" id="pilot">
-        <p class="eyebrow">Pilot model</p>
-        <h2>Start with schools, youth organisations, sports clubs and workshop partners.</h2>
-        <p>
+      <section class="section pilot" data-config-section="pilot" id="pilot">
+        <p class="eyebrow" id="pilot-eyebrow">Pilot model</p>
+        <h2 id="pilot-heading">Start with schools, youth organisations, sports clubs and workshop partners.</h2>
+        <p id="pilot-text">
           Validate with young men aged 13 to 18, test the five core journeys and collect feedback before building the
           full mentor app.
         </p>
-        <a class="button button-primary" href="mailto:hello@fortheboys.example">Register interest</a>
+        <a class="button button-primary" id="pilot-cta" href="mailto:hello@fortheboys.example">Register interest</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>For The Boys: Mentor</span>
-      <span>Ancient wisdom for modern young men.</span>
+      <span id="footer-brand">For The Boys: Mentor</span>
+      <span id="footer-tagline">Ancient wisdom for modern young men.</span>
     </footer>
 
     <script src="/script.js"></script>
