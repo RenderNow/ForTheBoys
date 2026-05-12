@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="For The Boys Mentor is a Stoic AI mentor concept for young men, focused on discipline, resilience and better decisions."
+    />
+    <title>For The Boys: Mentor</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="For The Boys Mentor home">
+        <span class="brand-mark">FTB</span>
+        <span>For The Boys</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#journeys">Mentor Flow</a>
+        <a href="#schools">Schools</a>
+        <a href="#safety">Safety</a>
+      </nav>
+      <a class="nav-action" href="#pilot">Start Pilot</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Stoic AI mentor for young men</p>
+          <h1>Build the man before the world tests him.</h1>
+          <p class="hero-lede">
+            Calm, structured support for boys and young men to pause, reflect and make better choices under pressure.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#pilot">Launch the pilot</a>
+            <a class="button button-secondary" href="#journeys">See the flow</a>
+          </div>
+        </div>
+
+        <div class="phone-shell" aria-label="Mentor app preview">
+          <div class="phone-screen">
+            <div class="phone-logo">For The Boys</div>
+            <p class="screen-kicker">AI Mentor</p>
+            <h2>What do you need today?</h2>
+            <div class="check-in">
+              <strong>Today's check-in</strong>
+              <span>Start with a 60-second reset before the day tests you.</span>
+              <button type="button">Start</button>
+            </div>
+            <div class="tool-grid">
+              <button type="button" data-flow="anger" class="tool-card active">
+                <strong>Anger Reset</strong>
+                <span>Pause before you react</span>
+              </button>
+              <button type="button" data-flow="overwhelm" class="tool-card">
+                <strong>Feeling Low</strong>
+                <span>Ground yourself</span>
+              </button>
+              <button type="button" data-flow="decision" class="tool-card">
+                <strong>Decision Help</strong>
+                <span>Think it through</span>
+              </button>
+              <button type="button" data-flow="discipline" class="tool-card">
+                <strong>Discipline</strong>
+                <span>Get back on track</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="Core promise">
+        <span>Pause</span>
+        <span>Reflect</span>
+        <span>Act with strength</span>
+      </section>
+
+      <section class="section" id="journeys">
+        <div class="section-heading">
+          <p class="eyebrow">Mentor flow</p>
+          <h2>Simple journeys, not an open-ended therapy bot.</h2>
+          <p>
+            The first version focuses on safe, guided paths for real moments: anger, overwhelm, rejection, discipline,
+            decisions, daily reflection and journaling.
+          </p>
+        </div>
+
+        <div class="flow-layout">
+          <div class="flow-panel">
+            <div class="flow-title">
+              <span id="flow-label">Anger reset</span>
+              <strong id="flow-heading">Pause before you react.</strong>
+            </div>
+            <div class="chat-window" aria-live="polite">
+              <p class="bubble mentor" id="mentor-one">
+                You cannot control what was said. You can control what you do next.
+              </p>
+              <p class="bubble user" id="user-line">I want to message him back now.</p>
+              <p class="bubble mentor" id="mentor-two">
+                Then we slow down first. What outcome do you actually want in one hour?
+              </p>
+              <div class="micro-steps" id="micro-steps">
+                <span>Breathe for 30 seconds</span>
+                <span>Write it but do not send</span>
+                <span>Speak to someone trusted</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-list" aria-label="Available mentor journeys">
+            <button type="button" class="journey active" data-flow="anger">
+              <span>01</span>
+              <strong>Anger Reset</strong>
+              <small>Slow down before the reaction becomes the regret.</small>
+            </button>
+            <button type="button" class="journey" data-flow="overwhelm">
+              <span>02</span>
+              <strong>Anxiety & Overwhelm</strong>
+              <small>Separate what is in your control from what is not.</small>
+            </button>
+            <button type="button" class="journey" data-flow="rejection">
+              <span>03</span>
+              <strong>Rejection Reflection</strong>
+              <small>Handle embarrassment, pressure and comparison.</small>
+            </button>
+            <button type="button" class="journey" data-flow="discipline">
+              <span>04</span>
+              <strong>Discipline Builder</strong>
+              <small>Turn motivation into one clear next action.</small>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-band" id="schools">
+        <div>
+          <p class="eyebrow">For schools and youth teams</p>
+          <h2>Built around emotional fitness, character and practical action.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Daily check-ins</h3>
+            <p>Short reflections that help users name what happened, what they can control and what comes next.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Guided journal</h3>
+            <p>Private prompts around courage, discipline, patience, humility, confidence and self-control.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Decision mentor</h3>
+            <p>Structured support before sending a message, arguing, quitting, fighting or taking a risky choice.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section safety" id="safety">
+        <div class="safety-copy">
+          <p class="eyebrow">Safeguarding first</p>
+          <h2>Not therapy. Not diagnosis. Not a replacement for trusted adults.</h2>
+          <p>
+            The mentor should support everyday reflection and emotional regulation while clearly routing serious issues
+            to urgent human help.
+          </p>
+        </div>
+        <ul class="safety-list">
+          <li>No mental health diagnosis</li>
+          <li>No secrecy from trusted adults</li>
+          <li>No harmful or violent advice</li>
+          <li>Crisis and safeguarding routing</li>
+        </ul>
+      </section>
+
+      <section class="section proof">
+        <div class="proof-copy">
+          <p class="eyebrow">Brand direction</p>
+          <h2>Black, charcoal, bold white type and the FTB yellow accent.</h2>
+          <p>
+            The page uses the visual language from the supplied brand example and keeps the first version intentionally
+            focused for a clickable pilot.
+          </p>
+        </div>
+        <img src="/assets/brand-example.jpg" alt="For The Boys Mentor brand example shots" />
+      </section>
+
+      <section class="section pilot" id="pilot">
+        <p class="eyebrow">Pilot model</p>
+        <h2>Start with schools, youth organisations, sports clubs and workshop partners.</h2>
+        <p>
+          Validate with young men aged 13 to 18, test the five core journeys and collect feedback before building the
+          full mentor app.
+        </p>
+        <a class="button button-primary" href="mailto:hello@fortheboys.example">Register interest</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>For The Boys: Mentor</span>
+      <span>Ancient wisdom for modern young men.</span>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
