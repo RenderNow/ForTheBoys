@@ -1,31 +1,39 @@
-# For The Boys: Mentor Site
+# FTB Web App Pilot
 
-A simple Node/Express landing site for the For The Boys Stoic Mentor concept.
+Mobile-first React/Vite prototype for the FTB "For The Boys" mentor app concept.
 
-## Run Locally
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://localhost:5173`.
 
-Admin editor:
+## Production Build
 
-- Open `http://localhost:3000/admin`
-- Local default password: `fortheboys`
-- Set `ADMIN_PASSWORD` before deploying online.
+```bash
+npm run build
+npm start
+```
+
+`server.js` serves the built `dist` folder and exposes `/health` for Render.
+
+## Prototype Scope
+
+- No login or user accounts
+- No backend app API
+- No database
+- No real AI integration
+- No payment processing
+- Demo state is stored only in browser localStorage using `ftb_*` keys
+- Support is always accessible and is never behind pricing
 
 ## Render
 
 Render can run this as a Node web service.
 
-- Build command: `npm install`
+- Build command: `npm install && npm run build`
 - Start command: `npm start`
 - Port: provided automatically through `process.env.PORT`
-- Environment variable: `ADMIN_PASSWORD`
-
-The included `render.yaml` can be used later when the project is pushed to GitHub.
-
-The admin editor stores changes in `data/site-config.json` by default. On Render, the filesystem is ephemeral unless you attach a persistent disk or move this config to a database, so production admin changes can be lost on redeploys without persistent storage.
